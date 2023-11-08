@@ -32,5 +32,37 @@ namespace Clave1_Grupo1
         {
             this.Close();
         }
+
+        private void TxtUsuario_Enter(object sender, EventArgs e)
+        {
+            if(TxtUsuario.Text == "USUARIO")
+            {
+                TxtUsuario.Text = "";
+            }
+        }
+
+        private void TxtUsuario_Leave(object sender, EventArgs e)
+        {
+            if(TxtUsuario.Text=="")
+            {
+                TxtUsuario.Text = "USUARIO";
+            }
+        }
+
+        private void TxtContraseña_Enter(object sender, EventArgs e)
+        {
+            if (TxtContraseña.Text== "CONTRASEÑA")
+            {
+                TxtContraseña.Text = "";
+            }
+        }
+
+        private void TxtContraseña_Leave(object sender, EventArgs e)
+        {
+            if (TxtContraseña.Text == "")
+            {
+                TxtContraseña.Text = "CONTRASEÑA";
+            }
+        }
     }
 }
