@@ -54,6 +54,7 @@ namespace Clave1_Grupo1
             if (TxtContraseña.Text== "CONTRASEÑA")
             {
                 TxtContraseña.Text = "";
+                TxtContraseña.UseSystemPasswordChar = true;
             }
         }
 
@@ -62,6 +63,8 @@ namespace Clave1_Grupo1
             if (TxtContraseña.Text == "")
             {
                 TxtContraseña.Text = "CONTRASEÑA";
+                TxtContraseña.UseSystemPasswordChar = false;
+
             }
         }
     }
