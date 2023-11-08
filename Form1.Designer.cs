@@ -127,7 +127,7 @@ namespace Clave1_Grupo1
             this.BtnSalir.FlatAppearance.BorderSize = 0;
             this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSalir.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnSalir.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnSalir.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnSalir.Location = new System.Drawing.Point(705, 0);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(75, 32);
