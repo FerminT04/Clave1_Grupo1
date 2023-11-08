@@ -96,12 +96,12 @@ namespace Clave1_Grupo1
             // 
             // BtnInicioSesion
             // 
-            this.BtnInicioSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(130)))), ((int)(((byte)(242)))));
+            this.BtnInicioSesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
             this.BtnInicioSesion.FlatAppearance.BorderSize = 0;
             this.BtnInicioSesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(36)))), ((int)(((byte)(1)))));
             this.BtnInicioSesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(36)))), ((int)(((byte)(1)))));
             this.BtnInicioSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnInicioSesion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
+            this.BtnInicioSesion.ForeColor = System.Drawing.Color.White;
             this.BtnInicioSesion.Location = new System.Drawing.Point(355, 198);
             this.BtnInicioSesion.Name = "BtnInicioSesion";
             this.BtnInicioSesion.Size = new System.Drawing.Size(326, 23);
