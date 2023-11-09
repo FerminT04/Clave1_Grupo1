@@ -1,0 +1,11 @@
+D:\marco\Documents\OneDrive\Documentos\Proyectos\Clave1_Grupo1\bin\Debug\Clave1_Grupo1.exe.config
+D:\marco\Documents\OneDrive\Documentos\Proyectos\Clave1_Grupo1\bin\Debug\Clave1_Grupo1.exe
+D:\marco\Documents\OneDrive\Documentos\Proyectos\Clave1_Grupo1\bin\Debug\Clave1_Grupo1.pdb
+D:\marco\Documents\OneDrive\Documentos\Proyectos\Clave1_Grupo1\obj\Debug\Clave1_Grupo1.csproj.AssemblyReference.cache
+D:\marco\Documents\OneDrive\Documentos\Proyectos\Clave1_Grupo1\obj\Debug\Clave1_Grupo1.Form1.resources
+D:\marco\Documents\OneDrive\Documentos\Proyectos\Clave1_Grupo1\obj\Debug\Clave1_Grupo1.Properties.Resources.resources
+D:\marco\Documents\OneDrive\Documentos\Proyectos\Clave1_Grupo1\obj\Debug\Clave1_Grupo1.csproj.GenerateResource.cache
+D:\marco\Documents\OneDrive\Documentos\Proyectos\Clave1_Grupo1\obj\Debug\Clave1_Grupo1.csproj.CoreCompileInputs.cache
+D:\marco\Documents\OneDrive\Documentos\Proyectos\Clave1_Grupo1\obj\Debug\Clave1_Grupo1.exe
+D:\marco\Documents\OneDrive\Documentos\Proyectos\Clave1_Grupo1\obj\Debug\Clave1_Grupo1.pdb
+D:\marco\Documents\OneDrive\Documentos\Proyectos\Clave1_Grupo1\obj\Debug\Clave1_Grupo1.exe.config
