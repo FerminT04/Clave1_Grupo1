@@ -32,14 +32,14 @@ namespace Clave1_Grupo1
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.button1 = new System.Windows.Forms.Button();
             this.panel_menu = new System.Windows.Forms.Panel();
+            this.BtnReservas = new System.Windows.Forms.Button();
+            this.BtnLocales = new System.Windows.Forms.Button();
+            this.BtnUsuario = new System.Windows.Forms.Button();
             this.paneldiseño1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.BtnUsuario = new System.Windows.Forms.Button();
-            this.BtnLocales = new System.Windows.Forms.Button();
-            this.BtnReservas = new System.Windows.Forms.Button();
             this.subMenu = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel_menu.SuspendLayout();
             this.subMenu.SuspendLayout();
             this.SuspendLayout();
@@ -71,6 +71,51 @@ namespace Clave1_Grupo1
             this.panel_menu.Size = new System.Drawing.Size(200, 450);
             this.panel_menu.TabIndex = 1;
             // 
+            // BtnReservas
+            // 
+            this.BtnReservas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
+            this.BtnReservas.FlatAppearance.BorderSize = 0;
+            this.BtnReservas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnReservas.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnReservas.Image = ((System.Drawing.Image)(resources.GetObject("BtnReservas.Image")));
+            this.BtnReservas.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnReservas.Location = new System.Drawing.Point(24, 118);
+            this.BtnReservas.Name = "BtnReservas";
+            this.BtnReservas.Size = new System.Drawing.Size(145, 30);
+            this.BtnReservas.TabIndex = 6;
+            this.BtnReservas.Text = "Reservas";
+            this.BtnReservas.UseVisualStyleBackColor = true;
+            // 
+            // BtnLocales
+            // 
+            this.BtnLocales.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
+            this.BtnLocales.FlatAppearance.BorderSize = 0;
+            this.BtnLocales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLocales.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLocales.Image = ((System.Drawing.Image)(resources.GetObject("BtnLocales.Image")));
+            this.BtnLocales.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnLocales.Location = new System.Drawing.Point(24, 65);
+            this.BtnLocales.Name = "BtnLocales";
+            this.BtnLocales.Size = new System.Drawing.Size(145, 30);
+            this.BtnLocales.TabIndex = 5;
+            this.BtnLocales.Text = "Locales";
+            this.BtnLocales.UseVisualStyleBackColor = true;
+            this.BtnLocales.Click += new System.EventHandler(this.BtnLocales_Click);
+            // 
+            // BtnUsuario
+            // 
+            this.BtnUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BtnUsuario.FlatAppearance.BorderSize = 0;
+            this.BtnUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnUsuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnUsuario.Image = ((System.Drawing.Image)(resources.GetObject("BtnUsuario.Image")));
+            this.BtnUsuario.Location = new System.Drawing.Point(65, 350);
+            this.BtnUsuario.Name = "BtnUsuario";
+            this.BtnUsuario.Size = new System.Drawing.Size(58, 52);
+            this.BtnUsuario.TabIndex = 4;
+            this.BtnUsuario.UseVisualStyleBackColor = true;
+            this.BtnUsuario.Click += new System.EventHandler(this.BtnUsuario_Click);
+            // 
             // paneldiseño1
             // 
             this.paneldiseño1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
@@ -91,51 +136,6 @@ namespace Clave1_Grupo1
             this.panel3.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseMove);
             this.panel3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseUp);
             // 
-            // BtnUsuario
-            // 
-            this.BtnUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BtnUsuario.FlatAppearance.BorderSize = 0;
-            this.BtnUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnUsuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnUsuario.Image = ((System.Drawing.Image)(resources.GetObject("BtnUsuario.Image")));
-            this.BtnUsuario.Location = new System.Drawing.Point(74, 357);
-            this.BtnUsuario.Name = "BtnUsuario";
-            this.BtnUsuario.Size = new System.Drawing.Size(46, 45);
-            this.BtnUsuario.TabIndex = 4;
-            this.BtnUsuario.UseVisualStyleBackColor = true;
-            this.BtnUsuario.Click += new System.EventHandler(this.BtnUsuario_Click);
-            // 
-            // BtnLocales
-            // 
-            this.BtnLocales.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
-            this.BtnLocales.FlatAppearance.BorderSize = 0;
-            this.BtnLocales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnLocales.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLocales.Image = ((System.Drawing.Image)(resources.GetObject("BtnLocales.Image")));
-            this.BtnLocales.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnLocales.Location = new System.Drawing.Point(24, 65);
-            this.BtnLocales.Name = "BtnLocales";
-            this.BtnLocales.Size = new System.Drawing.Size(145, 30);
-            this.BtnLocales.TabIndex = 5;
-            this.BtnLocales.Text = "Locales";
-            this.BtnLocales.UseVisualStyleBackColor = true;
-            this.BtnLocales.Click += new System.EventHandler(this.BtnLocales_Click);
-            // 
-            // BtnReservas
-            // 
-            this.BtnReservas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
-            this.BtnReservas.FlatAppearance.BorderSize = 0;
-            this.BtnReservas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnReservas.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnReservas.Image = ((System.Drawing.Image)(resources.GetObject("BtnReservas.Image")));
-            this.BtnReservas.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnReservas.Location = new System.Drawing.Point(24, 118);
-            this.BtnReservas.Name = "BtnReservas";
-            this.BtnReservas.Size = new System.Drawing.Size(145, 30);
-            this.BtnReservas.TabIndex = 6;
-            this.BtnReservas.Text = "Reservas";
-            this.BtnReservas.UseVisualStyleBackColor = true;
-            // 
             // subMenu
             // 
             this.subMenu.Controls.Add(this.button3);
@@ -146,22 +146,6 @@ namespace Clave1_Grupo1
             this.subMenu.TabIndex = 4;
             this.subMenu.Visible = false;
             this.subMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.subMenu_Paint);
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(0, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 27);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Zona Cerrada";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -178,6 +162,22 @@ namespace Clave1_Grupo1
             this.button3.Text = "Zona Abierta";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.Location = new System.Drawing.Point(0, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(200, 27);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Zona Cerrada";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form2
             // 
