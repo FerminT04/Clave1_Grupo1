@@ -37,7 +37,11 @@ namespace Clave1_Grupo1
             this.BtnUsuario = new System.Windows.Forms.Button();
             this.BtnLocales = new System.Windows.Forms.Button();
             this.BtnReservas = new System.Windows.Forms.Button();
+            this.subMenu = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel_menu.SuspendLayout();
+            this.subMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -115,6 +119,7 @@ namespace Clave1_Grupo1
             this.BtnLocales.TabIndex = 5;
             this.BtnLocales.Text = "Locales";
             this.BtnLocales.UseVisualStyleBackColor = true;
+            this.BtnLocales.Click += new System.EventHandler(this.BtnLocales_Click);
             // 
             // BtnReservas
             // 
@@ -131,12 +136,56 @@ namespace Clave1_Grupo1
             this.BtnReservas.Text = "Reservas";
             this.BtnReservas.UseVisualStyleBackColor = true;
             // 
+            // subMenu
+            // 
+            this.subMenu.Controls.Add(this.button3);
+            this.subMenu.Controls.Add(this.button2);
+            this.subMenu.Location = new System.Drawing.Point(200, 65);
+            this.subMenu.Name = "subMenu";
+            this.subMenu.Size = new System.Drawing.Size(200, 121);
+            this.subMenu.TabIndex = 4;
+            this.subMenu.Visible = false;
+            this.subMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.subMenu_Paint);
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.Location = new System.Drawing.Point(0, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(200, 27);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Zona Cerrada";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.Location = new System.Drawing.Point(0, 36);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(200, 34);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Zona Abierta";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(231)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.subMenu);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.paneldiseño1);
             this.Controls.Add(this.panel_menu);
@@ -146,6 +195,7 @@ namespace Clave1_Grupo1
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel_menu.ResumeLayout(false);
+            this.subMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -159,5 +209,8 @@ namespace Clave1_Grupo1
         private System.Windows.Forms.Button BtnUsuario;
         private System.Windows.Forms.Button BtnReservas;
         private System.Windows.Forms.Button BtnLocales;
+        private System.Windows.Forms.Panel subMenu;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
     }
 }

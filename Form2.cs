@@ -53,5 +53,27 @@ namespace Clave1_Grupo1
         {
 
         }
+
+        private void subMenu_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            subMenu.Visible = false;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            subMenu.Visible = false;
+
+
+        }
+
+        private void BtnLocales_Click(object sender, EventArgs e)
+        {
+            subMenu.Visible = true;
+        }
     }
 }
