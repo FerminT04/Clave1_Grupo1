@@ -35,6 +35,8 @@ namespace Clave1_Grupo1
             this.paneldiseño1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.BtnUsuario = new System.Windows.Forms.Button();
+            this.BtnLocales = new System.Windows.Forms.Button();
+            this.BtnReservas = new System.Windows.Forms.Button();
             this.panel_menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +57,8 @@ namespace Clave1_Grupo1
             // panel_menu
             // 
             this.panel_menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(132)))), ((int)(((byte)(209)))));
+            this.panel_menu.Controls.Add(this.BtnReservas);
+            this.panel_menu.Controls.Add(this.BtnLocales);
             this.panel_menu.Controls.Add(this.BtnUsuario);
             this.panel_menu.Controls.Add(this.button1);
             this.panel_menu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -97,6 +101,36 @@ namespace Clave1_Grupo1
             this.BtnUsuario.UseVisualStyleBackColor = true;
             this.BtnUsuario.Click += new System.EventHandler(this.BtnUsuario_Click);
             // 
+            // BtnLocales
+            // 
+            this.BtnLocales.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
+            this.BtnLocales.FlatAppearance.BorderSize = 0;
+            this.BtnLocales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLocales.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLocales.Image = ((System.Drawing.Image)(resources.GetObject("BtnLocales.Image")));
+            this.BtnLocales.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnLocales.Location = new System.Drawing.Point(24, 65);
+            this.BtnLocales.Name = "BtnLocales";
+            this.BtnLocales.Size = new System.Drawing.Size(145, 30);
+            this.BtnLocales.TabIndex = 5;
+            this.BtnLocales.Text = "Locales";
+            this.BtnLocales.UseVisualStyleBackColor = true;
+            // 
+            // BtnReservas
+            // 
+            this.BtnReservas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
+            this.BtnReservas.FlatAppearance.BorderSize = 0;
+            this.BtnReservas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnReservas.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnReservas.Image = ((System.Drawing.Image)(resources.GetObject("BtnReservas.Image")));
+            this.BtnReservas.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnReservas.Location = new System.Drawing.Point(24, 118);
+            this.BtnReservas.Name = "BtnReservas";
+            this.BtnReservas.Size = new System.Drawing.Size(145, 30);
+            this.BtnReservas.TabIndex = 6;
+            this.BtnReservas.Text = "Reservas";
+            this.BtnReservas.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -123,5 +157,7 @@ namespace Clave1_Grupo1
         private System.Windows.Forms.Panel paneldiseño1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button BtnUsuario;
+        private System.Windows.Forms.Button BtnReservas;
+        private System.Windows.Forms.Button BtnLocales;
     }
 }
