@@ -31,6 +31,7 @@ namespace Clave1_Grupo1
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+            Application.Exit();
         }
 
         private void TxtUsuario_Enter(object sender, EventArgs e)
@@ -66,6 +67,14 @@ namespace Clave1_Grupo1
                 TxtContraseña.UseSystemPasswordChar = false;
 
             }
+        }
+
+        private void BtnInicioSesion_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 f2 = new Form2();
+            f2.Show();
+
         }
     }
 }

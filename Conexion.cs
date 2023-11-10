@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
-
+/*
 namespace Clave1_Grupo1
 {
     class Conexion
@@ -50,3 +50,4 @@ namespace Clave1_Grupo1
         }
     }
 }
+*/

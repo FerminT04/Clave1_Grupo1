@@ -16,5 +16,42 @@ namespace Clave1_Grupo1
         {
             InitializeComponent();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            this.Close();
+            Form1 f1 = new Form1();
+            f1.Show();
+            
+        }
+        bool val = false;
+        private void panel3_MouseDown(object sender, MouseEventArgs e)
+        {
+            val = true;
+        }
+
+        private void panel3_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (val == true)
+            {
+                this.Location = Cursor.Position;
+            }
+        }
+
+        private void panel3_MouseUp(object sender, MouseEventArgs e)
+        {
+            val = false;
+        }
+
+        private void BtnUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
