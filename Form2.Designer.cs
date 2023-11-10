@@ -40,8 +40,12 @@ namespace Clave1_Grupo1
             this.subMenu = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.subreserva = new System.Windows.Forms.Panel();
+            this.BtnResAbierta = new System.Windows.Forms.Button();
+            this.BtnResCerrada = new System.Windows.Forms.Button();
             this.panel_menu.SuspendLayout();
             this.subMenu.SuspendLayout();
+            this.subreserva.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -85,6 +89,7 @@ namespace Clave1_Grupo1
             this.BtnReservas.TabIndex = 6;
             this.BtnReservas.Text = "Reservas";
             this.BtnReservas.UseVisualStyleBackColor = true;
+            this.BtnReservas.Click += new System.EventHandler(this.BtnReservas_Click);
             // 
             // BtnLocales
             // 
@@ -179,12 +184,55 @@ namespace Clave1_Grupo1
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // subreserva
+            // 
+            this.subreserva.Controls.Add(this.BtnResAbierta);
+            this.subreserva.Controls.Add(this.BtnResCerrada);
+            this.subreserva.Location = new System.Drawing.Point(206, 201);
+            this.subreserva.Name = "subreserva";
+            this.subreserva.Size = new System.Drawing.Size(200, 129);
+            this.subreserva.TabIndex = 8;
+            this.subreserva.Visible = false;
+            // 
+            // BtnResAbierta
+            // 
+            this.BtnResAbierta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
+            this.BtnResAbierta.FlatAppearance.BorderSize = 0;
+            this.BtnResAbierta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnResAbierta.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnResAbierta.Image = ((System.Drawing.Image)(resources.GetObject("BtnResAbierta.Image")));
+            this.BtnResAbierta.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnResAbierta.Location = new System.Drawing.Point(0, 36);
+            this.BtnResAbierta.Name = "BtnResAbierta";
+            this.BtnResAbierta.Size = new System.Drawing.Size(200, 34);
+            this.BtnResAbierta.TabIndex = 7;
+            this.BtnResAbierta.Text = "Zona Abierta";
+            this.BtnResAbierta.UseVisualStyleBackColor = true;
+            this.BtnResAbierta.Click += new System.EventHandler(this.BtnResAbierta_Click);
+            // 
+            // BtnResCerrada
+            // 
+            this.BtnResCerrada.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(51)))), ((int)(((byte)(66)))));
+            this.BtnResCerrada.FlatAppearance.BorderSize = 0;
+            this.BtnResCerrada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnResCerrada.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnResCerrada.Image = ((System.Drawing.Image)(resources.GetObject("BtnResCerrada.Image")));
+            this.BtnResCerrada.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnResCerrada.Location = new System.Drawing.Point(0, 3);
+            this.BtnResCerrada.Name = "BtnResCerrada";
+            this.BtnResCerrada.Size = new System.Drawing.Size(200, 27);
+            this.BtnResCerrada.TabIndex = 6;
+            this.BtnResCerrada.Text = "Zona Cerrada";
+            this.BtnResCerrada.UseVisualStyleBackColor = true;
+            this.BtnResCerrada.Click += new System.EventHandler(this.BtnResCerrada_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(231)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.subreserva);
             this.Controls.Add(this.subMenu);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.paneldiseño1);
@@ -196,6 +244,7 @@ namespace Clave1_Grupo1
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel_menu.ResumeLayout(false);
             this.subMenu.ResumeLayout(false);
+            this.subreserva.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -212,5 +261,8 @@ namespace Clave1_Grupo1
         private System.Windows.Forms.Panel subMenu;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel subreserva;
+        private System.Windows.Forms.Button BtnResAbierta;
+        private System.Windows.Forms.Button BtnResCerrada;
     }
 }

@@ -75,5 +75,21 @@ namespace Clave1_Grupo1
         {
             subMenu.Visible = true;
         }
+
+        private void BtnReservas_Click(object sender, EventArgs e)
+        {
+            subreserva.Visible = true;
+
+        }
+
+        private void BtnResCerrada_Click(object sender, EventArgs e)
+        {
+            subreserva.Visible = false;
+        }
+
+        private void BtnResAbierta_Click(object sender, EventArgs e)
+        {
+            subreserva.Visible = false;
+        }
     }
 }

@@ -76,5 +76,12 @@ namespace Clave1_Grupo1
             f2.Show();
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            Registrar R1 = new Registrar();
+            R1.Show();
+        }
     }
 }
