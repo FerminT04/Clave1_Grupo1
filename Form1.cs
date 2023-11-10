@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Clave1_Grupo1
 {
@@ -20,7 +21,7 @@ namespace Clave1_Grupo1
 
         private void BtnIngresar_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -36,7 +37,7 @@ namespace Clave1_Grupo1
 
         private void TxtUsuario_Enter(object sender, EventArgs e)
         {
-            if(TxtUsuario.Text == "USUARIO")
+            if (TxtUsuario.Text == "USUARIO")
             {
                 TxtUsuario.Text = "";
             }
@@ -44,7 +45,7 @@ namespace Clave1_Grupo1
 
         private void TxtUsuario_Leave(object sender, EventArgs e)
         {
-            if(TxtUsuario.Text=="")
+            if (TxtUsuario.Text == "")
             {
                 TxtUsuario.Text = "USUARIO";
             }
@@ -52,7 +53,7 @@ namespace Clave1_Grupo1
 
         private void TxtContraseña_Enter(object sender, EventArgs e)
         {
-            if (TxtContraseña.Text== "CONTRASEÑA")
+            if (TxtContraseña.Text == "CONTRASEÑA")
             {
                 TxtContraseña.Text = "";
                 TxtContraseña.UseSystemPasswordChar = true;
@@ -71,17 +72,43 @@ namespace Clave1_Grupo1
 
         private void BtnInicioSesion_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form2 f2 = new Form2();
-            f2.Show();
+            
+
+            String Usuario, Contraseña;
+            Usuario = TxtUsuario.Text;
+            Contraseña = TxtContraseña.Text;
+            MySqlConnection con = new MySqlConnection("Server = localhost;Database = clave1_grupo1db;User Id=root; Password = root");
+            try
+            {
+                con.Open();
+
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("ERROR" + ex.ToString());
+                throw;
+            }
+            String sql = "select user, pass from users where user = " + Usuario + "And pass =" + Contraseña + "";
+            MySqlCommand cmd = new MySqlCommand(sql, con);
+            MySqlDataReader read = cmd.ExecuteReader();
+            if (read.Read())
+            {
+                this.Hide();
+                Form2 f2 = new Form2();
+                f2.Show();
+            }
+            else
+            {
+                MessageBox.Show("Contraseña o Usuario Incorrectos" + Usuario);
+            }
+
 
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.Hide();
-            Registrar R1 = new Registrar();
-            R1.Show();
+            
+            
         }
     }
 }
